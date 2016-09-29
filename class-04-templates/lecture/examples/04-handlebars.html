@@ -13,16 +13,18 @@
 </head>
 <body>
   <div id="app"></div>
-  <script>
+  <script type="text/javascript">
     var data = {
       who: "Students",
       name: "Ivan",
       what: "Apples"
     };
-    var appTemplate = $('#hello').html()
-    var compiledTemplate = Handlebars.compile(appTemplate);
+    var appTemplate = $('#hello').html() //select id, we have to ask for the html content
+    var compiledTemplate = Handlebars.compile(appTemplate); //return value is a javascript function, means we need to invoke it
     var html = compiledTemplate(data);
-    $('#app').append(html);
+    $('#app').append(html); //invoking and passing in data
+
+    // take toHtml and refactor with handlebars for assignment and refactor the one that calls toHtml and refactor a little bit
   </script>
 
 </body>
