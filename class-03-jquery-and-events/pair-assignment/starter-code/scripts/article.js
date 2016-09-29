@@ -34,10 +34,12 @@ rawData.sort(function(a,b) { // organizing by the date; comparing which is newer
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
+//.sort - working two parameters; is a smaller than b? yes so a stays the same, and b moves to the next one
+
 rawData.forEach(function(ele) { //push from raw data into new article
-  articles.push(new Article(ele));
+  articles.push(new Article(ele)); // ele represents each item in an index in an array in this case each article object
 });
 
 articles.forEach(function(a){ //append to html for each
-  $('#articles').append(a.toHtml());
-});
+  $('#articles').append(a.toHtml()); // a like ele handling one object in array
+}); // this invokes to html on the object and appends it to #articles
