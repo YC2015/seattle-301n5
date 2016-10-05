@@ -11,7 +11,7 @@ function Article (opts) {
   this.publishedOn = opts.publishedOn;
 }
 
-Article.prototype.toHtml = function() {
+Article.prototype.toHtml = function() { //function that returns a function
   var template = Handlebars.compile($('#article-template').text());
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
