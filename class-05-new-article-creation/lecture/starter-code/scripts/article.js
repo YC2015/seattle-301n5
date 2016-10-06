@@ -16,7 +16,7 @@ Article.prototype.toHtml = function() { //function that returns a function
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
   this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
-  this.body = marked(this.body);
+  this.body = marked(this.body); //takes pound sign and back ticks and turns them into html (marked library being used)
 
   return template(this);
 };
