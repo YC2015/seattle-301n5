@@ -37,9 +37,10 @@ Pair up to work on the MVC blog, then take what you learn to your portfolio site
   a += 1   // a === 2
 
   // immutability
+  let z = 1
   const a = 1
   a += 1          //ERROR!
-  
+
   const b = a + 1 // b === 2, a === 1
   ```
 - idempotence
