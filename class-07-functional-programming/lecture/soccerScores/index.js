@@ -11,47 +11,9 @@ const inputString = `Lions 3, Snakes 3\nTarantulas 1, Aardvarks 0\nLions 1, Aard
 // }
 // hint: string.split() returns an array of strings
 
-const parseGames = function(input) {
-  return input
-<<<<<<< HEAD
-  const game = input.split('\n');
-  const team = input.split(',');
-  const score = input.split('');
-=======
-    //split on \n  <- game strings like 'Lions 3, Snakes 3'
-    .split('\n')
-    //split on ,
-    .map(function(game) {
-      return game.split(', ')
-    })
-    .map(function(teamArr) {
-      const teamA = teamArr[0].split(' ')
-      const teamB = teamArr[1].split(' ')
-      return gameObj(teamA[0], teamA[1], teamB[0], teamB[1])
-    })
-
-    //split on space
-    //make object
->>>>>>> c71632aea698636933cdddbad935ee735d60b8a0
 }
 
 
-// once you have broken the string into individual values,
-// use a helper function that takes the values from the input string and returns a game object
-
-const gameObj = function(n1, s1, n2, s2) {
-  return {
-<<<<<<< HEAD
-    game : 'game',
-    team: 'team',
-    score: 'score'
-=======
-    teamA: n1,
-    scoreA: s1,
-    teamB: n2,
-    scoreB: s2
->>>>>>> c71632aea698636933cdddbad935ee735d60b8a0
-  }
 }
 
 console.log(parseGames(inputString));
