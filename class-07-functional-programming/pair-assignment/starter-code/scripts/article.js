@@ -73,8 +73,8 @@
   // TODID: Chain together a `map` and a `reduce` call to produce an array of unique author names.
   Article.allAuthors = function() {
     return Article.all.map(function(article){
-      return article.author;
-    }).reduce (function(a, b){
+      return article.author; //returns an array of authors
+    }).reduce(function(a, b){ //reduce returns us a new array
       if (a.indexOf(b) < 0)
         a.push(b);
       return a;
