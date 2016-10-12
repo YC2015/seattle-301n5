@@ -11,9 +11,6 @@ const inputString = `Lions 3, Snakes 3\nTarantulas 1, Aardvarks 0\nLions 1, Aard
 // }
 // hint: string.split() returns an array of strings
 
-}
 
-
-}
 
 console.log(parseGames(inputString));
