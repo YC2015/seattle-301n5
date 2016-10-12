@@ -62,11 +62,11 @@
 
   // TODID: Chain together a `map` and a `reduce` call to get a rough count of all words in all articles.
   Article.numWordsAll = function() {
-    return Article.all.map(function(article) {
+    return Article.all.map(function(article) { //Article.all is an array of all the article objects, map creates new array
       return article.body.split(' ').length;// Get the total number of words in this article
     })
     .reduce(function(a, b) {
-      return a + b;// Sum up all the values in the collection
+      return a + b;// Sum up all the values in the collection; reduces to just one by the rules you give it. You put their values together
     })
   };
 
@@ -91,12 +91,12 @@
                   a.push(b);
                 return a;
               },[])
-              .reduce (function(a, b) {
+              .reduce (function(a, b) { // a&b are articles
                 return a + b.body.split(' ').length;
               }, 0)
         // someKey: someValOrFunctionCall().map(...).reduce(...), ...
       }
     })
   };
-module.Article = Article;
+module.Article = Article; //taking what we are creating in this Article and adding it as a property to the window object
 })(window);

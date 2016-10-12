@@ -4,9 +4,9 @@
   function Article (opts) {
     // DONE: Convert property assignment to Functional Programming style. Now, ALL properties
     // of `opts` will be assigned as properies of the newly created article object.
-    Object.keys(opts).forEach(function(e, index, keys) {
-      this[e] = opts[e];
-    },this);
+    Object.keys(opts).forEach(function(e, index, keys) { //creates new "this" value so we add this to the end to work around it
+      this[e] = opts[e]; //instead of naming all properties individually, we use forEach; if we pass an object, will cycle through the keys and values
+    },this);// sets the value of this for the overall function for the object being return
   }
 
   Article.all = [];
