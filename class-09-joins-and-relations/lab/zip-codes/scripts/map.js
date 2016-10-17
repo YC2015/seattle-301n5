@@ -14,21 +14,6 @@
         position:{lat:firstcity.latitude,lng:firstcity.longitude},
         map: map
       });
-      //
-      // row.forEach(function(city, index){
-      //   var marker = 'marker' + index;
-      //   var infowindows = 'infowindows' + index;
-      //   map[infowindows] = new google.maps.infowindows({ //m
-      //   })
-      //   map[marker]= new google.maps.Marker({
-      //     position:{lat:city.latitude, lng:city.longitude},
-      //     map: map.map
-      //   })
-        //map[marker].addListner
-      //});
-
-
-
     } else {
       var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 47.611435, lng: -122.330456},
@@ -42,7 +27,7 @@
     }
   }
 
-  // TODO: Follow the Google Maps API docs to create markers on the map based on the search options on the home page.
+  // TODID: Follow the Google Maps API docs to create markers on the map based on the search options on the home page.
   //webDB.execute(
 
 

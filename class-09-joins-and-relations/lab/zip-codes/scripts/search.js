@@ -1,9 +1,8 @@
-/*webDB*/
+
 (function(module) {
 
   // TODO: Write the code to populate your filters, and enable the search queries here in search.js
   (function() {
-    //$('#state-select').attr('disabled', true);
     webDB.execute('SELECT DISTINCT state FROM zips ORDER BY state', function(stateresults){
       stateresults.forEach(function(row){
         var staterow = '<option value = '+row.state+'>'+row.state+'</option>'
@@ -36,6 +35,6 @@
       initMap(row);
     })
   })
-// TODO: You will also interact with the map.js file here
+// TODID: You will also interact with the map.js file here
 
 })(window)
