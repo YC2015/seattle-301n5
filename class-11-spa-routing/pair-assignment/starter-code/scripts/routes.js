@@ -3,6 +3,7 @@
 
 page('/', articlesController.index);
 page('/about', aboutController.index);
+page('/admin', adminController.index);
 
 // TODID: What function do you call to activate page.js? Fire it off now, to execute!
 page();
