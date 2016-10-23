@@ -23,6 +23,9 @@
         <a href="#" class="read-on">Read on &rarr;</a>
       </article>
     </script>
+    <script id="author-template" type="text/x-handlebars-template">
+      <li><strong>{{name}}</strong>: {{numWords}} words written</li>
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
@@ -72,6 +75,16 @@
           </ul>
         </section>
       </section>
+      <section id="admin"  class="tab-content">
+        <h1>Blog Stats</h1>
+        <section id="blog-stats">
+          <dt>Total articles:</dt> <dd class="articles"></dd>
+          <dt>Total words:</dt> <dd class="words"></dd>
+          <h2>Author Stats</h2>
+          <p><em>Details on who is writing, and how much writing they are doing...</em></p>
+          <ul class="author-stats">
+          </ul>
+        </section>
     </main>
     <footer>
       &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
@@ -87,6 +100,7 @@
     <script src="/scripts/aboutController.js"></script>
     <script src="/scripts/articleView.js"></script>
     <script src="/scripts/articleController.js"></script>
+    <script src="/scripts/adminController.js"></script>
     <script src="/scripts/routes.js"></script>
 
     <!-- TODID: These function calls inside the script tag do not look great here. Why not place them where
