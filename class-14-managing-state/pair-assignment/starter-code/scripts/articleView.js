@@ -13,6 +13,7 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  // This method compiles Handlebars and populates the drop down menus for authors and categories.
   articleView.populateFilters = function() {
     var options,
       template = Handlebars.compile($('#option-template').text());
@@ -38,6 +39,7 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //Grabs anything with the id of filters and runs an event handler that will listen for a change. The selected id will determine our new page route.
   articleView.handleFilters = function() {
     $('#filters').one('change', 'select', function() {
       resource = this.id.replace('-filter', '');
@@ -124,6 +126,7 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
+  //This method hides the articles that weren't selected and renders the article that was selected.
   articleView.index = function(articles) {
     $('#articles').show().siblings().hide();
 
@@ -134,8 +137,8 @@
 
     articleView.populateFilters();
     // COMMENT: What does this method do?  What is it's execution path?
+    // This method is hiding part of the body of article body for articles with more than one paragraph.
     articleView.handleFilters();
-
     // DONE: Replace setTeasers with just the truncation logic, if needed:
     if ($('#articles article').length > 1) {
       $('.article-body *:nth-of-type(n+2)').hide();
