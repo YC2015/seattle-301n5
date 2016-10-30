@@ -1,8 +1,6 @@
 ## Daily Plans
 1. Code Review
 2. Middleware intro
-3. Middleware demo with Page.js
-4. Project Pitches and Teams
 5. Review Projects and Workflow... Questions?
 
 ## Class videos

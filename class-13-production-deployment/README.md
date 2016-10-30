@@ -3,7 +3,7 @@
 ## Daily Plan
 1. Code Review
 2. Heroku Deployment Demo
-3. Firebase Deployment Demo
+3. Project Pitches
 
 ## Class videos
  [Part 1]()
@@ -13,8 +13,11 @@
 ## Helpful Resources
 
 # Project Pitches
-1) Guess that song (Sound cloud)
-2) MOHAI Data display (Dan checking on data access)
-3) Weather Planner (Accuweather / forecase.io / ?)
-4) Car Maintenance Helper (edmonds.com API)
-5) Stock portfolio manager (finance API, maybe Yahoo?)
+2. Employee Logistics Scheduler (Science Center baseline)
+  - Jeff
+  - Yamile
+  - Will
+4. LinkedUp - Use LinkedIn auth/info to generate possible MeetUp ops
+  - Jeremiah
+  - Brit
+  - Trent
