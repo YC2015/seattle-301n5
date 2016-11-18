@@ -5,20 +5,16 @@
     // Create a map object and specify the DOM element for display.
     if(row){
       var firstcity = row[0];
-      var secondcity = row[1];
-      console.log(firstcity);
       var ll = { lat:firstcity.latitude,lng:firstcity.longitude};
       map = new google.maps.Map(document.getElementById('map'),{
         zoom: 8,
         center: ll
       });
-      var marker = new google.maps.Marker({
-        position:{lat:firstcity.latitude,lng:firstcity.longitude},
-        map: map
-      });
-      var marker = new google.maps.Marker({
-        position:{lat:secondcity.latitude,lng:secondcity.longitude},
-        map: map
+      row.forEach(function(ele){
+        var marker = new google.maps.Marker({
+          position:{lat:ele.latitude,lng:ele.longitude},
+          map: map
+        });
       });
     } else {
       var map = new google.maps.Map(document.getElementById('map'), {
